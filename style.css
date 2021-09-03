@@ -1,0 +1,32 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+body{
+	font-family: Arial;
+	font-size: 1.2rem;
+	margin: 0;
+}
+img {
+	max-width: 100%;
+}
+header {
+	background: darkred;
+	padding: .1em;
+	color: #fff;
+}
+hgroup {
+	text-align: center;
+}
+header h1 {
+	margin-bottom: .2em
+}
+header h3 {
+	margin-top: .2em;
+}
+.container {
+	max-width: 90%;
+	margin: 0 auto;
+}
+.sectTitle {
+	text-align: center;
+}
