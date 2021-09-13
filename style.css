@@ -1,27 +1,73 @@
 *, *::before, *::after {
 	box-sizing: border-box;
 }
+@font-face {
+	font-family: Pacifico;
+	src: url(fonts/pacifico.ttf)
+}
+@font-face {
+	font-family: Inconsolata;
+	src: url(fonts/inconsolata.ttf)
+}
 body{
-	font-family: Arial;
-	font-size: 1.2rem;
+	font-family: Calibri;
+	font-size: 1.25rem;
 	margin: 0;
 }
 img {
 	max-width: 100%;
 }
-header {
-	background: darkred;
-	padding: .1em;
+
+.backg {
+	background-image: url(img/restaurant.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 	color: #fff;
 }
-hgroup {
+.hero {
+	background: rgba(82, 78, 78, 0.6);
+	min-height: 300px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+header hgroup {
 	text-align: center;
+	
+	line-height: 5px;
 }
 header h1 {
-	margin-bottom: .2em
+	font-family: Pacifico, cursive;
+	font-size: 4.2rem;
 }
 header h3 {
-	margin-top: .2em;
+	margin-top: 0;
+	font-family: Inconsolata;
+	font-weight: 200;
+	font-size: 1.6rem;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+nav hr {
+	color: white;
+	border-style: solid;
+}
+nav ul li {
+	background: rgb(189, 79, 79);
+	color: #fff;
+	width: 100%;
+	padding: .5em 0;
+	text-align: center;
+	cursor: pointer;
 }
 .container {
 	max-width: 90%;
@@ -29,4 +75,77 @@ header h3 {
 }
 .sectTitle {
 	text-align: center;
+	font-family: Pacifico;
+	margin-bottom: .4em;
+	color:rgb(74, 83, 133);
+	font-size: 1.6rem;
+}
+.underlineTitle {
+	width:80px;
+	margin: 0 auto 1.5em auto;
+	color: rgb(189, 79, 79);
+}
+section #menu {
+	margin: 0 auto;
+	padding: 0;
+	width:80%;
+	list-style: none;
+}
+#menu li {
+	background-color: #ddd;
+	padding: .5em;
+	margin: .5em 0;
+	text-align: center;
+	box-shadow: 1px 1px 1px #777;
+}
+
+
+
+
+
+
+
+section {
+	padding: 1em 0;
+}
+
+
+section#three {
+	margin-bottom: 1.5em;
+}
+
+#map {
+	display: block;
+	width: 100%;
+	height: 300px;
+	margin: 0 auto;
+}
+section#three p {
+	text-align: center;
+}
+button#message {
+	display: block;
+	padding: 1em;
+	border: none;
+	color: white;
+	background: #25d366;
+	border-radius: 5px;
+	margin: 0 auto;
+	font-size: 1rem;
+	cursor: pointer;
+}
+footer {
+	margin-bottom: 1.2em;
+}
+footer p {
+	text-align: center;
+	color:rgba(82, 78, 78, 0.6);
+	font-size: .9rem;
+}
+footer a {
+	
+	color: inherit;
+}
+footer a:hover {
+	text-decoration: underline;
 }
