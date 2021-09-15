@@ -1,10 +1,6 @@
 var weekDay = new Date().getDay()
 var hour = new Date().getHours()
 
-
-weekDay = 2;
-hour = 9;
-
 var oneTitle = document.querySelector('section#one .sectTitle')
 var oneNotice = document.querySelector('.aviso')
 oneTitle.innerText = ''
@@ -35,3 +31,7 @@ if (weekDay >=1 && weekDay < 6) {
     oneNotice.innerHTML = 'Hoje nosso estabelecimento encontra-se <span class="foco">fechado</span>.'
     //HOY NO ABRIMOS
 }
+
+$('nav button').on('click', function() {
+    alert('botão tá funcionando...')
+})

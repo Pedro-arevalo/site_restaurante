@@ -34,7 +34,6 @@ img {
 }
 header hgroup {
 	text-align: center;
-	
 	line-height: 5px;
 }
 header h1 {
@@ -49,10 +48,12 @@ header h3 {
 	letter-spacing: 6px;
 	text-transform: uppercase;
 }
-
+nav {
+	padding: 0;
+	margin: 0;
+}
 nav ul {
 	display: flex;
-	justify-content: space-between;
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -61,14 +62,19 @@ nav hr {
 	color: white;
 	border-style: solid;
 }
-nav ul li {
-	background: rgb(189, 79, 79);
-	color: #fff;
+nav li {
 	width: 100%;
-	padding: .5em 0;
-	text-align: center;
+}
+nav button {
+	width: 100%;
+	border: none;
+	background: rgb(189, 79, 79);
+	padding: .8em;
+	font-size: 1rem;
+	color: #fff;
 	cursor: pointer;
 }
+
 .container {
 	max-width: 90%;
 	margin: 0 auto;
@@ -84,7 +90,7 @@ section {
 	font-size: 1.6rem;
 }
 .underlineTitle {
-	width:80px;
+	width: 80px;
 	margin: 0 auto 1.5em auto;
 	color: rgb(189, 79, 79);
 }
@@ -94,6 +100,20 @@ section#one #menu {
 	width:80%;
 	list-style: none;
 }
+
+section#one .aviso {
+	font-family: Inconsolata;
+	font-size: 1.4rem;
+	text-align: center;
+	color: #555;
+	max-width: 300px;
+	margin: 0 auto;
+}
+section#one span.foco {
+	color: red;
+	text-transform: uppercase;
+}
+
 #menu li {
 	background-color: #ddd;
 	padding: .5em;
@@ -145,9 +165,49 @@ footer p {
 	font-size: .9rem;
 }
 footer a {
-	
 	color: inherit;
 }
 footer a:hover {
 	text-decoration: underline;
+}
+
+@media (min-width: 700px) {
+
+	nav ul li{
+		width: initial;
+		padding: 1em;
+	}
+	nav hr {
+		display: none;
+	}
+	nav ul {
+		background: rgb(189, 79, 79);
+		justify-content: center;
+	}
+	.navButton {
+		padding: 0;
+		
+	}
+}
+
+@media (min-width: 900px) {
+	#bigScreen-flex {
+		display: flex;
+		justify-content: space-between;
+	}
+	section#two {
+		width: 60%;
+	}
+	div#sectionContainer {
+		width: 35%;
+	}
+	section#two #textFlex {
+		display: flex;
+		justify-content: space-around;
+	}
+	section#two .data {
+		max-width: 220px;
+		width: 45%;
+		text-align: center;
+	}
 }
