@@ -1,7 +1,7 @@
 var weekDay = new Date().getDay()
 var hour = new Date().getHours()
 
-var oneTitle = document.querySelector('section#one .sectTitle')
+var oneTitle = document.querySelector('section#two .sectTitle')
 var oneNotice = document.querySelector('.aviso')
 oneTitle.innerText = ''
 oneNotice.innerText = ''
