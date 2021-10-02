@@ -20,14 +20,14 @@ img {
 }
 
 .backg {
-	background-image: url(img/restaurant.jpg);
+	background-image: url(img/restaurant3.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;
-	color: #fff;
+	background-position: center;
+	color: #FFF;
 }
 .hero {
-	background: rgba(158, 106, 106, 0.2);
+	background: rgba(71, 71, 71, 0.575);
 	min-height: 300px;
 	display: flex;
 	justify-content: space-around;
@@ -88,7 +88,7 @@ section {
 	text-align: center;
 	font-family: Pacifico;
 	margin-bottom: .4em;
-	color:rgb(74, 83, 133);
+	color:rgb(115, 127, 197);
 	font-size: 1.6rem;
 }
 .underlineTitle {
@@ -110,7 +110,7 @@ section#one #map {
 	margin: 0 auto;
 }
 
-section#two #menu {
+section#two #foodMenu {
 	margin: 0 auto;
 	padding: 0;
 	width:80%;
@@ -130,7 +130,7 @@ section#two span.foco {
 	text-transform: uppercase;
 }
 
-#menu li {
+#foodMenu li {
 	background-color: #ddd;
 	padding: .5em;
 	margin: .5em 0;
@@ -204,7 +204,6 @@ footer a {
 		padding: 1em;
 		margin-bottom: 1em;
 		background-color: rgba(153, 153, 153, 0.377);
-		
 		border-radius: 10px;
 	}
 	.card + .card {
