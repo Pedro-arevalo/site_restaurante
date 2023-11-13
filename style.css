@@ -13,21 +13,18 @@ body{
 	font-family: Calibri;
 	font-size: 1.25rem;
 	margin: 0;
-	background-color: ;
 }
 img {
 	max-width: 100%;
 }
-
 .backg {
-	background-image: url(img/restaurant3.png);
+	background-image: url(img/restaurant-smallScreens.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
-	color: #FFF;
+	background-position: bottom;
 }
 .hero {
-	background: rgba(71, 71, 71, 0.575);
+	background:rgba(158, 106, 106, 0.2);
 	min-height: 300px;
 	display: flex;
 	justify-content: space-around;
@@ -36,6 +33,7 @@ img {
 header hgroup {
 	text-align: center;
 	line-height: 5px;
+	color: #fff;
 }
 header h1 {
 	font-family: Pacifico, cursive;
@@ -94,7 +92,7 @@ section {
 .underlineTitle {
 	width: 80px;
 	margin: 0 auto 1.5em auto;
-	color: rgb(189, 79, 79);
+	border-color: rgb(189, 79, 79);
 }
 section#one #textFlex {
 	max-width: 600px;
@@ -214,8 +212,16 @@ footer a {
 	color: inherit;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 500px) {
+	.backg {
+		background-image: url(img/restaurant-mediumScreens.png);
+	}
+}
 
+@media (min-width: 700px) {
+	.backg {
+		background-image: url(img/restaurant-bigScreens.png);
+	}
 	nav ul li{
 		width: initial;
 		padding: 1em;
@@ -269,6 +275,9 @@ footer a {
 }
 
 @media (min-width: 900px) {
+	.backg {
+		background-image: url(img/restaurant-largeScreens.png);
+	}
 	#bigScreen-flex {
 		display: flex;
 		justify-content: space-between;

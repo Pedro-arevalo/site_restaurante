@@ -1,1 +1,82 @@
-<h2 class="aviso">Sobre Nós</h2>
+<head>
+    <style>
+        section#about-us {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        p {
+            text-align: justify;
+            text-indent: 2em;
+            margin: 1em 0 0 0;
+        }
+        p + p {
+            margin-top: .5em;
+        }
+        section#about-us img {
+            margin-top: 2em;
+            border: 2px solid rgb(74, 83, 133)
+        }
+        #colombian-flag {
+            margin: 2.5em auto 0 auto;
+            width: 32px;
+            height: 24px;
+        }
+        #colombian-flag div:nth-of-type(1) {
+            height: 50%;
+            background-color: yellow;
+        }
+        #colombian-flag div:nth-of-type(2) {
+            height: 25%;
+            background-color: blue;
+        }
+        #colombian-flag div:nth-of-type(3){
+            height: 25%;
+            background-color: red;
+        }
+        @media (min-width: 800px) {
+            section#about-us {
+                max-width: initial;
+                margin-top: 2em;
+            }
+            #aboutUs-flexContainer {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .aboutUs-flexColumn {
+                width: 45%;
+            }
+            section#about-us .sectTitle {
+                margin-top: 0;
+            }
+            .aboutUs-flexColumn:nth-of-type(2) {
+                max-width: 400px;
+            }
+            section#about-us img {
+                margin-top: 0;
+            }
+            #colombian-flag {
+                margin-top: 4em;
+            }
+            footer {
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<section id="about-us">
+    <div id="aboutUs-flexContainer">
+        <div class="aboutUs-flexColumn">
+            <h2 class="sectTitle">Sobre Nós</h2>
+            <hr class="underlineTitle">
+            <p>Em atuação desde maio de 2019, nosso estabelecimento familiar oferece PFs e marmitas com comida tipicamente caseira.</p>
+            <p>Encontre-nos na rua Quintino Level Lima, número 305, bairro Mecejana. Abrimos de segunda a sábado, das 11h às 14h. Não fechamos em dias feriados ou pontos facultativos.</p>
+        </div>
+        <div class="aboutUs-flexColumn">
+            <img src="../img/restaurantOutside.jpg" alt="O restaurante visto da garagem.">
+        </div>
+    </div>
+    <div id="colombian-flag">
+        <div></div><div></div><div></div>
+    </div>
+</section>
